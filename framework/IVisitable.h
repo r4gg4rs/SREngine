@@ -1,13 +1,14 @@
 #ifndef SR_IVISITABLE_H
 #define SR_IVISITABLE_H
 
+
 namespace SR
 {
 	class IVistable
 	{
 		public:
-			virtual ~IVisitable() { }
-			virtual void Accept(IVistior* visitor)=0;
+			virtual ~IVistable() { }
+			virtual void Accept(IVistor* visitor)=0;
 			
 	};
 }

@@ -5,11 +5,11 @@
 #include <map>
 #include <vector>
 #include <string>
-#include "../framework/IVisitable.h"
-
+//#include "../framework/IVisitable.h"
+#include "../framework/IVisitor.h"
 namespace SR
 {
-	class Entity : public IVisitable
+	class Entity// : public IVisitable
 	{
 		typedef std::map<std::string, Component*> ComponentMap;
 		typedef std::vector<Entity*>				EntityList;
@@ -25,7 +25,7 @@ namespace SR
 		
 			void AddComponent( std::string name, Component* component)
 			{
-				m_componentMap[name] = component;
+				m_componentMap[name] = component;
 			}
 			
 			void Add(Entity* children)

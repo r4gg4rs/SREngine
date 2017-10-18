@@ -3,13 +3,13 @@
 
 #include "../framework/ISystem.h"
 #include <vector>
-
+#include "../utils/singleton.h"
 
 namespace SR
 {
-	class CoreEngine
+	class CoreEngine : public Singleton<CoreEngine>
 	{
-		typedef std::Vector<ISystem*> SystemList;
+		typedef std::vector<ISystem*> SystemList;
 		
 		private:
 			bool		m_isRunning;
@@ -27,8 +27,8 @@ namespace SR
 			
 			void Stop() 
 			{
-			
-			}	m_isRunning = false;
+				m_isRunning = false;
+			}	
 			
 			void Update()
 			{	

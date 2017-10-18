@@ -11,15 +11,16 @@ namespace SR
 			static ID	s_nextID;
 		private:
 			ID			m_id;
-			Entity*		p_parent;
+			Entity*		p_owner;
 		public:
-			virtual ~Component() { }
+			Component();
+			virtual ~Component();
 			
 			void 	SetOwner(Entity* entity);
 			Entity*	GetOwner();
 			
 		public:
-			static GetNextID();
+			static ID GetNextID();
 	};
 }
 #endif

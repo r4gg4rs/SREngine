@@ -14,6 +14,7 @@ namespacde SR
 				
 			private:
 				Vertices	m_vertices;
+				ID			m_id;
 			public:
 				Mesh() { }
 				~Mesh() { }
@@ -26,6 +27,11 @@ namespacde SR
 				const Vertices& GetVertices() const
 				{
 					return m_vertices;
+				}
+				
+				ID GetID() const
+				{
+					return m_id;
 				}
 		};
 	}

@@ -6,8 +6,9 @@ namespace SR
 {
 	class ISystem
 	{
-		virtual ~ISystem() { }
-		virtual void Update()=0;
+		public:
+			virtual ~ISystem() { }
+			virtual void Update()=0;
 	};
 }
 #endif

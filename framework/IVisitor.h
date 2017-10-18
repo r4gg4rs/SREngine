@@ -1,7 +1,7 @@
 #ifndef SR_IVISITOR_H
 #define SR_IVISITOR_H
 
-#include "IVisitable.h"
+//#include "IVisitable.h"
 
 namespace SR
 {
