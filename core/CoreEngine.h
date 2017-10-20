@@ -4,6 +4,7 @@
 #include "../framework/ISystem.h"
 #include <vector>
 #include "../utils/singleton.h"
+#include <iostream>
 
 namespace SR
 {
@@ -18,6 +19,7 @@ namespace SR
 		
 			void Start()
 			{
+				std::cout << "CoreEngine : start " << std::endl;
 				m_isRunning = true;
 				while(m_isRunning)
 				{
@@ -27,7 +29,13 @@ namespace SR
 			
 			void Stop() 
 			{
+				std::cout << "CoreEngine: stop " << std::endl;
 				m_isRunning = false;
+			}
+			
+			void AddSystem(ISystem* system)
+			{
+				m_systemList.push_back(system);
 			}	
 			
 			void Update()
@@ -45,6 +53,7 @@ namespace SR
 				}
 				
 			}
+			
 	};
 }
 

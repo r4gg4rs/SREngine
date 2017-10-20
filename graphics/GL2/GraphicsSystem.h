@@ -15,7 +15,7 @@ namespace SR
 	{
 		namespace GL2
 		{
-			class GraphicsSystem
+			class GraphicsSystem : public SR::Graphics::GraphicsSystem
 			{
 				private:
 					Camera*		p_camera;

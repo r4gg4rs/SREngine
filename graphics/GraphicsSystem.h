@@ -25,6 +25,7 @@ namespace SR
 			private:
 				Camera*		p_camera;
 				IRenderer*	p_renderer;
+				IWindow*	p_window;
 			public:
 				/**
 					Update
@@ -53,6 +54,11 @@ namespace SR
 				void SetRenderer(IRenderer* renderer)
 				{
 					p_renderer = renderer;
+				}
+				
+				void SetWindow(IWindow* window)
+				{
+					p_window = window;
 				}
 		};
 	}

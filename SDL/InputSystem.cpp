@@ -22,12 +22,12 @@ void InputSystem::Update()
 		if(event.type ==SDL_QUIT)
 		{
 
-//			CoreGame::GetSingleton().Stop();		
+			CoreEngine::GetSingleton().Stop();		
 		}
 		if(event.type == SDL_KEYDOWN)
 		{
 			const char* key = SDL_GetKeyName(event.key.keysym.sym);
-	//		Notify( key);
+			Notify( key);
 		}
 	}
 }

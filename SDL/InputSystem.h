@@ -14,6 +14,7 @@
 #include <vector>
 #include "../input/InputListener.h"
 #include "../utils/singleton.h"
+#include "../core/CoreEngine.h"	
 
 namespace SR
 {
