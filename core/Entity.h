@@ -20,8 +20,8 @@ namespace SR
 			EntityList			m_children;	
 			
 		public:
-			Entity();
-			~Entity();
+			Entity() : p_parent(NULL) { }
+			~Entity() { }
 		
 			void AddComponent( std::string name, Component* component)
 			{

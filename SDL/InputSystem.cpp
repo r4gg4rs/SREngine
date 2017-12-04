@@ -40,7 +40,7 @@ void InputSystem::AddListener( SR::Input::InputListener* listener, char* key)
 void InputSystem::Notify( const char* key)
 {
 
-	for( int i=0; i< m_listenerMap[key].size(); i++ )
+	for( unsigned int i=0; i< m_listenerMap[key].size(); i++ )
 	{
 		m_listenerMap[key][i]->Notify(key);
 	}

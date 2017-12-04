@@ -10,7 +10,7 @@ namespace SR
 			Vector3		m_position;
 			Quaternion	m_rotation;
 			Matrix4		m_modelMatrix;
-			bool		m_matrixNeedsToUpdate;
+			bool			m_matrixNeedsToUpdate;
 		public:
 			Transformation();
 			~Transformation();
@@ -24,6 +24,20 @@ namespace SR
 			Vector3& GetPosition()
 			{
 				return m_position;
+			}
+			
+			Vector3& GetWorldPosition()
+			{
+				Entity* owner = NULL;
+				owner = GetOwner(); 
+				if(!owner) return m_position;
+				Entity* ent = owner->GetParent();
+				while(ent)
+				{
+					ent = 
+				}
+				
+				
 			}
 			
 			void SetRotation( const Quaternion& rotation)

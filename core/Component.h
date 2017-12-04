@@ -1,6 +1,8 @@
 #ifndef SR_COMPONENT_H
 #define SR_COMPONENT_H
 
+#include "Entity.h"
+
 namespace SR
 {
 	typedef unsigned int ID;
