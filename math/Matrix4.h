@@ -316,7 +316,7 @@ namespace SR
 			
 			Set( 	xAxis.x, 	yAxis.x, 	zAxis.x,	0.0,
 				xAxis.y, 	yAxis.y, 	zAxis.y,	0.0,
-				zAxis.z, 	yAxis.z, 	zAxis.z,	0.0,
+				xAxis.z, 	yAxis.z, 	zAxis.z,	0.0,
 				-position.x,	-position.y,	-position.z,	1.0);
 		}
 		
